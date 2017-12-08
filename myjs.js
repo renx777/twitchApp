@@ -47,10 +47,10 @@ $(document).ready(function () {
                 }
 
                 if (c.stream == null || c.stream == undefined) {
-                    $('.all').append('<div class="container">' + '<div class="offliners">' + '<div class="row">' + '<div class="col-md-2 col-sm-12 col-xs-12">' + '<img src=' + purl + '></img>' + '</div>' + '<div class="col-md-4 col-sm-12 col-xs-12 ">' + '<a href=' + x.url + '>' + x.display_name + '</a>' + '</div>' + '<div class="col-md-6 col-sm-12 col-xs-12 ">' + '<span id>' + j + '</span>' + '</div></div></div>')
+                    $('.all').append('<div class="container">' + '<div class="offliners">' + '<div class="row">' + '<div class="col-md-2 col-sm-12 col-xs-12">' + '<img src=' + purl + '></img>' + '</div>' + '<div class="col-md-4 col-sm-12 col-xs-12 ">' + '<a  data-toggle="toottip" title="Click to go to twitch stream channel" href=' + x.url + '>' + x.display_name + '</a>' + '</div>' + '<div class="col-md-6 col-sm-12 col-xs-12 ">' + '<span id>' + j + '</span>' + '</div></div></div>')
                 }
                 else {
-                    $('.all').prepend('<div class="container">' + '<div class="onliners">' + '<div class="row">' + '<div class="col-md-2 col-sm-12 col-xs-12">' + '<img src=' + purl + '></img>' + '</div>' + '<div class="col-md-4 col-sm-12 col-xs-12 ">' + '<a href=' + x.url + '>' + x.display_name + '</a>' + '</div>' + '<div class="col-md-6 col-sm-12 col-xs-12 ">' + '<span id>' + j + '</span>' + '</div></div></div>')
+                    $('.all').prepend('<div class="container">' + '<div class="onliners">' + '<div class="row">' + '<div class="col-md-2 col-sm-12 col-xs-12">' + '<img src=' + purl + '></img>' + '</div>' + '<div class="col-md-4 col-sm-12 col-xs-12 ">' + '<a  data-toggle="toottip" title="Click to go to twitch stream channel" href=' + x.url + '>' + x.display_name + '</a>' + '</div>' + '<div class="col-md-6 col-sm-12 col-xs-12 ">' + '<span id>' + j + '</span>' + '</div></div></div>')
                 }
 
 
